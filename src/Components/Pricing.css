@@ -54,7 +54,7 @@
 	right: 0;
 	left: 0;
 	cursor: pointer;
-	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        background-color: #ccc;
 	border-radius: 35px;
 	transition: 0.4s;
 }
@@ -71,6 +71,9 @@
 	transition: 0.4s;
 	background-color: #fff;
 	border-radius: 50%;
+}
+.switch input:checked + .slider {
+        background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
 .switch input:checked + .slider::before {
 	transform: translateX(26px);
