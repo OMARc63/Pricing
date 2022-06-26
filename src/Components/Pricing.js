@@ -5,7 +5,7 @@ import bottom from '../images/bg-bottom.svg';
 
 function Pricing () {
 
-  let [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false)
 
     return (
       <div className="Pricing">
@@ -20,8 +20,8 @@ function Pricing () {
           <div className="Pricing-head">
             <h1>Our Pricing</h1>
             <span>Annually</span>
-            <label className="switch" onClick={()=>setToggle(!toggle)}>
-              <input type="checkbox"/>
+            <label className="switch" >
+              <input type="checkbox" onClick={()=>setToggle(!toggle)} />
               <span className="slider"></span>
             </label>
             <span>Monthly</span>          
