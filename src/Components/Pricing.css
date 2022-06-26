@@ -1,0 +1,163 @@
+/* bg design */
+.Pricing {
+}
+.design1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.design2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .design1 {
+    top: -6%;
+    right: -55%;
+  }
+  .design2 {
+    bottom: -6%;
+    left: -55%;
+  }
+}
+.Pricing-head {
+	margin-top: 50px;
+}
+.Pricing-head h1 {
+	margin-bottom: 40px;
+}
+.Pricing-head span {
+	display: inline-block;
+	color: hsl(234, 14%, 74%);
+}
+/* Switch button */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	top: -5px;
+  margin: 0 20px;
+}
+.switch input {
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+.switch .slider {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	cursor: pointer;
+	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	border-radius: 35px;
+	transition: 0.4s;
+}
+.switch:hover .slider {
+	opacity: 0.5;
+}
+.switch .slider::before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	height: 26px;
+	width: 26px;
+	transition: 0.4s;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.switch input:checked + .slider::before {
+	transform: translateX(26px);
+}
+/* Switch button */
+
+.Pricing-content {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Pricing-content .box {
+	min-width: 22%;
+	padding: 25px;
+	box-shadow: 0 0 30px #01010121;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.Pricing-content .box:nth-child(2) {
+	background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	color: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	z-index: 1;
+}
+/* Mobile screen */
+@media (max-width: 375px) {
+	.Pricing-content {
+    display: block;
+  }
+  .Pricing-content .box,
+  .Pricing-content .box:nth-child(2) {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
+.Pricing-content .box .box-title {
+	margin: 0;
+}
+.Pricing-content .box-price {
+	margin: 20px 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+.Pricing-content .box-price span {
+	font-size: 60px;
+}
+.Pricing-content .box-desc {
+	border-top: 1px solid hsl(234, 14%, 74%);
+}
+
+.Pricing-content .box:nth-child(2) .box-desc {
+	border-top: 1px solid hsl(234, 14%, 74%);
+}
+.Pricing-content .box-desc span {
+	display: block;
+	padding: 10px 0;
+	border-bottom: 0.5px solid hsl(234, 14%, 74%);
+}
+.Pricing-content .box:nth-child(2) .box-desc span {
+	border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+.Pricing-content .box button {
+	width: 100%;
+	outline: none;
+	border: 1px solid transparent;
+	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0;
+	margin-top: 25px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.Pricing-content .box button:hover {
+	background: transparent;
+	border: 1px solid hsl(237, 63%, 64%);
+	color: hsl(237, 63%, 64%);
+}
+.Pricing-content .box:nth-child(2) button {
+	background: #fff;
+	color: hsl(237, 63%, 64%);
+}
+.Pricing-content .box:nth-child(2) button:hover {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
